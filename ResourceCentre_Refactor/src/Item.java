@@ -1,5 +1,4 @@
 
-
 public class Item {
 	private String assetTag;
 	private String description;
