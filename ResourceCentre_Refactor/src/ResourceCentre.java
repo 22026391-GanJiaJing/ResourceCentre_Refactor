@@ -192,7 +192,7 @@ public class ResourceCentre {
 		if ((cc.getAssetTag().isEmpty()) || (cc.getDescription().isEmpty()) ) {
 			return;
 		}
-		camcorderList.add(cc);
+		camcorderList.add(cc); 
 		
 	}
 	public static Chromebook inputChromebook() {
