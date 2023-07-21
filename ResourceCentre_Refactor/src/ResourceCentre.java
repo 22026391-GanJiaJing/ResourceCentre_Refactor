@@ -195,7 +195,6 @@ public class ResourceCentre {
 		camcorderList.add(cc);
 		
 	}
-	
 	public static Chromebook inputChromebook() {
 		String tag = Helper.readString("Enter asset tag > ");
 		String description = Helper.readString("Enter description > ");
