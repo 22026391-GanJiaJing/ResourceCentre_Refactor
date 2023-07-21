@@ -3,18 +3,18 @@ import java.util.ArrayList;
 public class ResourceCentre {
 
 
-<<<<<<< HEAD
+
 	private static final int ITEM_TYPE_CHROMEBOOK = 2;
 	private static final int ITEM_TYPE_CAMCODER = 1;
 	private static final int OPTION_RETURN = 4;
 	private static final int OPTION_LOAN = 3;
 	private static final int OPTION_ADD = 2;
 	private static final int OPTION_VIEW = 1;
-=======
+
 	/**
 	 * 
 	 */
->>>>>>> stash
+
 	private static final int OPTION_QUIT = 5;
 
 	public static void main(String[] args) {
