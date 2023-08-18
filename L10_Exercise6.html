@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lesson 10 JavaScript</title>
+    </head>
+    <body>
+        <p style="font-size: 30px; color:red; font-family: Georgia, 'Times New Roman', Times, serif;">Safe<strong>Entry</strong> Mock-Up</p>
+        <div>Scroll over the different words to do the SafeEntry<br>Check-In and Out.</div>
+        <img onmouseover="checkIn()"style ="display: block;margin-top: 10px;" src="safeentry-CheckIn.jpg" alt="">
+        <img onmouseover="checkOut()" src="safeentry-CheckOut.JPG" alt="">
+        <script>
+            function checkIn(){
+                alert("SafeEntry Checked In")
+
+            }
+            function checkOut() {
+                alert("SafeEntry Checked Out")
+            }
+            </script>
+    </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <title>Sign Up</title>
+
+    <style>
+        body {
+            background-color: azure;
+            font-family: Arial, sans-serif;
+        }
+
+        .signup-box {
+            width: 360px;
+            height: 620px;
+            margin: auto;
+            background-color: white;
+            border-radius: 3px;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        form {
+            width: 300px;
+            margin-left: 20px;
+
+        }
+
+        form label {
+            display: flex;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        form input {
+            width: 100%;
+            padding: 7px;
+            border: none;
+            border: 1px solid gray;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        input[type="button"] {
+            width: 320px;
+            height: 35px;
+            margin-top: 20px;
+            border: none;
+            background-color: blue;
+            color: white;
+            font-size: 18px;
+
+        }
+
+        p {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 15px;
+
+        }
+
+        .para-2 {
+            text-align: center;
+            color: white;
+            font-size: 15px;
+            margin-top: -10px;
+        }
+
+        .para-2 {
+            color: blue;
+        }
+    </style>
+
+     <script>
+        function redirectToSuccessPage() {
+            window.location.href = 'signup_success.html';
+        }
+    </script>
+   
+
+</head>
+
+<body>
+    <div class="signup box">
+        <h1> Sign Up</h1>
+        <form>
+            <label>First Name</label>
+            <input type="text" placeholder="">
+            <label>Last Name</label>
+            <input type="text" placeholder="">
+            <label>Email</label>
+            <input type="email" placeholder="">
+            <label>Password</label>
+            <input type="password" placeholder="">
+            <label>Confirm Password</label>
+            <input type="password" placeholder="">
+            <label>Date of Birth</label>
+            <input type="text" placeholder="">
+            <label>Phone Number</label>
+            <input type="text" placeholder="">
+            <button class="submit-button" type="button" onclick="redirectToSuccessPage()">Sign Up</button>
+        </form>
+            
+
+        </form>
+        <p>By clicking the Sign Up button, youu agree to our <br>
+            <a href="#" Terms and Condititons></a> and <a href="#">Policy Privacy</a>
+        </p>
+    </div>
+    <p class="para-2"> Already have an account? <a
+            href="file:///C:/Users/user/Desktop/C369/L10/C369_LP03_LP10_Student/Student/Code/GA/login_and_signup.html">Login
+            here </a></p>
