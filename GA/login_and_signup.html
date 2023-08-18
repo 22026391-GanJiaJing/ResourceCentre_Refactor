@@ -86,13 +86,20 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const loginBtn = document.getElementById("loginBtn");
+            const userNameInput = document.querySelector('input[name="user"]');
+            const passwordInput = document.querySelector('input[name="password"]');
 
             loginBtn.addEventListener("click", function (event) {
                 // Prevent the default form submission behavior
                 event.preventDefault();
 
-                // Redirect to the success page
-                window.location.href = 'login_success.html';
+                // Check if both username and password inputs are not empty
+                if (userNameInput.value.trim() !== "" && passwordInput.value.trim() !== "") {
+                    // Redirect to the success page
+                    window.location.href = 'login_success.html';
+                } else {
+                    alert("Please enter a username and password.");
+                }
             });
         });
     </script>

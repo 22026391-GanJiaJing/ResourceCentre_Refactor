@@ -30,7 +30,6 @@
         form {
             width: 300px;
             margin-left: 20px;
-
         }
 
         form label {
@@ -56,64 +55,86 @@
             background-color: blue;
             color: white;
             font-size: 18px;
-
         }
 
         p {
             text-align: center;
             padding-top: 20px;
             font-size: 15px;
-
         }
 
         .para-2 {
             text-align: center;
-            color: white;
+            color: blue;
             font-size: 15px;
-            margin-top: -10px;
+            margin-top: 20px;
         }
 
-        .para-2 {
+        .login-link {
+            display: inline-block;
+            margin-right: -100px;
+            margin-top: 10px;
             color: blue;
+            text-decoration: underline;
         }
     </style>
 
-     <script>
+    <script>
         function redirectToSuccessPage() {
-            window.location.href = 'signup_success.html';
+            const firstNameInput = document.querySelector('input[name="first-name"]');
+            const lastNameInput = document.querySelector('input[name="last-name"]');
+            const emailInput = document.querySelector('input[name="email"]');
+            const passwordInput = document.querySelector('input[name="password"]');
+            const confirmPasswordInput = document.querySelector('input[name="confirm-password"]');
+            const dobInput = document.querySelector('input[name="dob"]');
+            const phoneNumberInput = document.querySelector('input[name="phone-number"]');
+
+            if (
+                firstNameInput.value.trim() !== "" &&
+                lastNameInput.value.trim() !== "" &&
+                emailInput.value.trim() !== "" &&
+                passwordInput.value.trim() !== "" &&
+                confirmPasswordInput.value.trim() !== "" &&
+                dobInput.value.trim() !== "" &&
+                phoneNumberInput.value.trim() !== ""
+            ) {
+                window.location.href = 'signup_success.html';
+            } else {
+                alert("Please fill out all the fields.");
+            }
         }
     </script>
-   
 
 </head>
 
 <body>
-    <div class="signup box">
+    <div class="signup-box">
         <h1> Sign Up</h1>
         <form>
             <label>First Name</label>
-            <input type="text" placeholder="">
+            <input type="text" name="first-name" placeholder="">
             <label>Last Name</label>
-            <input type="text" placeholder="">
+            <input type="text" name="last-name" placeholder="">
             <label>Email</label>
-            <input type="email" placeholder="">
+            <input type="email" name="email" placeholder="">
             <label>Password</label>
-            <input type="password" placeholder="">
+            <input type="password" name="password" placeholder="">
             <label>Confirm Password</label>
-            <input type="password" placeholder="">
+            <input type="password" name="confirm-password" placeholder="">
             <label>Date of Birth</label>
-            <input type="text" placeholder="">
+            <input type="text" name="dob" placeholder="">
             <label>Phone Number</label>
-            <input type="text" placeholder="">
+            <input type="text" name="phone-number" placeholder="">
             <button class="submit-button" type="button" onclick="redirectToSuccessPage()">Sign Up</button>
         </form>
-            
 
-        </form>
-        <p>By clicking the Sign Up button, youu agree to our <br>
-            <a href="#" Terms and Condititons></a> and <a href="#">Policy Privacy</a>
+        <p>By clicking the Sign Up button, you agree to our <br>
+            <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>
         </p>
     </div>
-    <p class="para-2"> Already have an account? <a
+    <p class="para-2"> Already have an account? <a class="login-link"
             href="file:///C:/Users/user/Desktop/C369/L10/C369_LP03_LP10_Student/Student/Code/GA/login_and_signup.html">Login
-            here </a></p>
+            here</a></p>
+</body>
+
+</html>
